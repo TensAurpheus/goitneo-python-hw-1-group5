@@ -17,7 +17,9 @@ def change_phone(args, contacts):
         phone = args[1]
         if name in contacts:
             contacts[name] = phone
-            return f'Success! Phone number for {name} changed to {phone}'
+            return (
+                f'Success! Phone number for {name} changed to {phone}'
+                    )
         else:
             return f'Error! There is no {name} in the contact list'
     except:
@@ -63,4 +65,5 @@ def main():
             print("Invalid command.")
 
 
-main()
+if __name__ == "__main__":
+    main()

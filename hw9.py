@@ -35,8 +35,10 @@ def get_birthdays_per_week(users):
         except:
             continue
 
-
-
-users = [{"name": "Bill Gates", "birthday": datetime(1955, 10, 12)},            {"name": "Bob Tom", "birthday": datetime(1935, 10, 18)}]
-get_birthdays_per_week(users)
+if __name__ == "__main__":
+    users = [
+        {"name": "Bill Gates", "birthday": datetime(1955, 10, 12)},      
+        {"name": "Bob Tom", "birthday": datetime(1935, 10, 18)}
+            ]
+    get_birthdays_per_week(users)
 
